@@ -674,6 +674,10 @@
          font-size: 14px;
        }
 
+       #capacityWrapper{
+         display: inherit;
+       }
+
 
       @media screen and (max-width: 800px) {
 
@@ -741,7 +745,7 @@
         font-size:11px !important;
         }
         #title{
-          font-size:13px;
+          font-size:12px;
         }
         .subtitle{
           font-size:12px;
@@ -810,6 +814,9 @@
           margin-left: 120px;
           font-size: 11px;
         }
+        #capacityWrapper{
+          display: none;
+        }
       }
       @media screen and (max-width: 500px) {
         .mapboxgl-popup {
@@ -841,227 +848,228 @@
               </ul>
             </div>
             <div class="tab-slider--container">
-              <div id="tab1" class="tab-slider--body">
+                <div id="tab1" class="tab-slider--body">
 
-                <div class="itemWrapper">
-                  <svg id="reset2" class="item" version="1.1" x="0px" y="0px"
-                    viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
-                  <g id="">
-                   <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
-                     c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
-                   <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
-                     c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
-                  </g>
-                  </svg>
-                  <div class="item">
-                    <p> Limpar Combustível</p>
+                  <div class="itemWrapper">
+                    <svg id="reset2" class="item" version="1.1" x="0px" y="0px"
+                      viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
+                    <g id="">
+                     <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
+                       c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
+                     <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
+                       c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
+                    </g>
+                    </svg>
+                    <div class="item">
+                      <p> Limpar Combustível</p>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle9 item filters' id="filter9">
+                       <input id='layer9On' type="radio" value="layer9On" name="toggle9" checked='checked'>
+                       <input id='layer9Off' type="radio" value="layer9Off" name="toggle9">
+                       <div class="toggle__pointer color1"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="nine">Gás natural</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle14 item filters' id="filter14">
+                       <input id='layer14On' type="radio" value="layer14On" name="toggle14" checked='checked'>
+                       <input id='layer14Off' type="radio" value="layer14Off" name="toggle14">
+                       <div class="toggle__pointer color6"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="fourteen">Gas propano</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle10 item filters' id="filter10">
+                       <input id='layer10On' type="radio" value="layer10On" name="toggle10" checked='checked'>
+                       <input id='layer10Off' type="radio" value="layer10Off" name="toggle10">
+                       <div class="toggle__pointer color2"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="ten">Carvão</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle13 item filters' id="filter13">
+                       <input id='layer13On' type="radio" value="layer13On" name="toggle13" checked='checked'>
+                       <input id='layer13Off' type="radio" value="layer13Off" name="toggle13">
+                       <div class="toggle__pointer color5"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="thirteen">Petróleo</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle11 item filters' id="filter11">
+                       <input id='layer11On' type="radio" value="layer11On" name="toggle11" checked='checked'>
+                       <input id='layer11Off' type="radio" value="layer11Off" name="toggle11">
+                       <div class="toggle__pointer color3"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="eleven">Óleo combustível</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle12 item filters' id="filter12">
+                       <input id='layer12On' type="radio" value="layer12On" name="toggle12" checked='checked'>
+                       <input id='layer12Off' type="radio" value="layer12Off" name="toggle12">
+                       <div class="toggle__pointer color4"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="twelve">Diesel</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle15 item filters' id="filter15">
+                       <input id='layer15On' type="radio" value="layer15On" name="toggle15" checked='checked'>
+                       <input id='layer15Off' type="radio" value="layer15Off" name="toggle15">
+                       <div class="toggle__pointer color7"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="fifteen">Coque verde</h2>
+                    </div>
+                  </div>
+                  <div class="itemWrapper">
+                    <div class='row toggle16 item filters' id="filter16">
+                       <input id='layer16On' type="radio" value="layer16On" name="toggle16" checked='checked'>
+                       <input id='layer16Off' type="radio" value="layer16Off" name="toggle16">
+                       <div class="toggle__pointer color8"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="sixteen">Outro</h2>
+                    </div>
                   </div>
                 </div>
-                <div class="itemWrapper">
-                  <div class='row toggle9 item filters' id="filter9">
-                     <input id='layer9On' type="radio" value="layer9On" name="toggle9" checked='checked'>
-                     <input id='layer9Off' type="radio" value="layer9Off" name="toggle9">
-                     <div class="toggle__pointer color1"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="nine">Gás natural</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle14 item filters' id="filter14">
-                     <input id='layer14On' type="radio" value="layer14On" name="toggle14" checked='checked'>
-                     <input id='layer14Off' type="radio" value="layer14Off" name="toggle14">
-                     <div class="toggle__pointer color6"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="fourteen">Gas propano</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle10 item filters' id="filter10">
-                     <input id='layer10On' type="radio" value="layer10On" name="toggle10" checked='checked'>
-                     <input id='layer10Off' type="radio" value="layer10Off" name="toggle10">
-                     <div class="toggle__pointer color2"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="ten">Carvão</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle13 item filters' id="filter13">
-                     <input id='layer13On' type="radio" value="layer13On" name="toggle13" checked='checked'>
-                     <input id='layer13Off' type="radio" value="layer13Off" name="toggle13">
-                     <div class="toggle__pointer color5"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="thirteen">Petróleo</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle11 item filters' id="filter11">
-                     <input id='layer11On' type="radio" value="layer11On" name="toggle11" checked='checked'>
-                     <input id='layer11Off' type="radio" value="layer11Off" name="toggle11">
-                     <div class="toggle__pointer color3"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="eleven">Óleo combustível</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle12 item filters' id="filter12">
-                     <input id='layer12On' type="radio" value="layer12On" name="toggle12" checked='checked'>
-                     <input id='layer12Off' type="radio" value="layer12Off" name="toggle12">
-                     <div class="toggle__pointer color4"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="twelve">Diesel</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle15 item filters' id="filter15">
-                     <input id='layer15On' type="radio" value="layer15On" name="toggle15" checked='checked'>
-                     <input id='layer15Off' type="radio" value="layer15Off" name="toggle15">
-                     <div class="toggle__pointer color7"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="fifteen">Coque verde</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle16 item filters' id="filter16">
-                     <input id='layer16On' type="radio" value="layer16On" name="toggle16" checked='checked'>
-                     <input id='layer16Off' type="radio" value="layer16Off" name="toggle16">
-                     <div class="toggle__pointer color8"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="sixteen">Outro</h2>
-                  </div>
-                </div>
-              </div>
-              <!-- end tab 1 -->
-              <div id="tab2" class="tab-slider--body">
+                <!-- end tab 1 -->
+                <div id="tab2" class="tab-slider--body">
 
-                <div class="itemWrapper">
-                  <svg id="reset" class="item" version="1.1" x="0px" y="0px"
-                    viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
-                  <g id="">
-                   <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
-                     c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
-                   <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
-                     c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
-                  </g>
-                  </svg>
-                  <div class="item">
-                    <p>Limpar status</p>
+                  <div class="itemWrapper">
+                    <svg id="reset" class="item" version="1.1" x="0px" y="0px"
+                      viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
+                    <g id="">
+                     <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
+                       c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
+                     <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
+                       c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
+                    </g>
+                    </svg>
+                    <div class="item">
+                      <p>Limpar status</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="itemWrapper">
-                  <div class='row toggle3 item filters' id="filter3">
-                     <input id='layer3On' type="radio" value="layer3On" name="toggle3" checked='checked'>
-                     <input id='layer3Off' type="radio" value="layer3Off" name="toggle3">
-                     <div class="toggle__pointer color3"></div>
+                  <div class="itemWrapper">
+                    <div class='row toggle3 item filters' id="filter3">
+                       <input id='layer3On' type="radio" value="layer3On" name="toggle3" checked='checked'>
+                       <input id='layer3Off' type="radio" value="layer3Off" name="toggle3">
+                       <div class="toggle__pointer color3"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="three">Planejada</h2>
+                    </div>
                   </div>
-                  <div class="item">
-                     <h2 id="three">Planejada</h2>
+                  <div class="itemWrapper">
+                    <div class='row toggle item filters' id="filter1">
+                       <input id='layer1On' type="radio" value="layer1On" name="toggle" checked='checked'>
+                       <input id='layer1Off' type="radio" value="layer1Off" name="toggle">
+                       <div class="toggle__pointer color1"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="one">Ativa</h2>
+                    </div>
                   </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle item filters' id="filter1">
-                     <input id='layer1On' type="radio" value="layer1On" name="toggle" checked='checked'>
-                     <input id='layer1Off' type="radio" value="layer1Off" name="toggle">
-                     <div class="toggle__pointer color1"></div>
+                  <div class="itemWrapper">
+                    <div class='row toggle5 item filters' id="filter5">
+                       <input id='layer5On' type="radio" value="layer5On" name="toggle5" checked='checked'>
+                       <input id='layer5Off' type="radio" value="layer5Off" name="toggle5">
+                       <div class="toggle__pointer color5"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="five">Em construção</h2>
+                    </div>
                   </div>
-                  <div class="item">
-                     <h2 id="one">Ativa</h2>
+                  <div class="itemWrapper">
+                    <div class='row toggle4 item filters' id="filter4">
+                       <input id='layer4On' type="radio" value="layer4On" name="toggle4" checked='checked'>
+                       <input id='layer4Off' type="radio" value="layer4Off" name="toggle4">
+                       <div class="toggle__pointer color4"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="four">Descartada</h2>
+                    </div>
                   </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle5 item filters' id="filter5">
-                     <input id='layer5On' type="radio" value="layer5On" name="toggle5" checked='checked'>
-                     <input id='layer5Off' type="radio" value="layer5Off" name="toggle5">
-                     <div class="toggle__pointer color5"></div>
+                  <div class="itemWrapper">
+                    <div class='row toggle7 item filters' id="filter7">
+                       <input id='layer7On' type="radio" value="layer7On" name="toggle7" checked='checked'>
+                       <input id='layer7Off' type="radio" value="layer7Off" name="toggle7">
+                       <div class="toggle__pointer color7"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="seven">Falhas constantes</h2>
+                    </div>
                   </div>
-                  <div class="item">
-                     <h2 id="five">Em construção</h2>
+                  <div class="itemWrapper">
+                    <div class='row toggle6 item filters' id="filter6">
+                       <input id='layer6On' type="radio" value="layer6On" name="toggle6" checked='checked'>
+                       <input id='layer6Off' type="radio" value="layer6Off" name="toggle6">
+                       <div class="toggle__pointer color6"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="six">Paralisada</h2>
+                    </div>
                   </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle4 item filters' id="filter4">
-                     <input id='layer4On' type="radio" value="layer4On" name="toggle4" checked='checked'>
-                     <input id='layer4Off' type="radio" value="layer4Off" name="toggle4">
-                     <div class="toggle__pointer color4"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="four">Descartada</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle7 item filters' id="filter7">
-                     <input id='layer7On' type="radio" value="layer7On" name="toggle7" checked='checked'>
-                     <input id='layer7Off' type="radio" value="layer7Off" name="toggle7">
-                     <div class="toggle__pointer color7"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="seven">Falhas constantes</h2>
-                  </div>
-                </div>
-                <div class="itemWrapper">
-                  <div class='row toggle6 item filters' id="filter6">
-                     <input id='layer6On' type="radio" value="layer6On" name="toggle6" checked='checked'>
-                     <input id='layer6Off' type="radio" value="layer6Off" name="toggle6">
-                     <div class="toggle__pointer color6"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="six">Paralisada</h2>
-                  </div>
-                </div>
 
-                <div class="itemWrapper">
-                  <div class='row toggle2 item filters' id="filter2">
-                     <input id='layer2On' type="radio" value="layer2On" name="toggle2" checked='checked'>
-                     <input id='layer2Off' type="radio" value="layer2Off" name="toggle2">
-                     <div class="toggle__pointer color2"></div>
-                  </div>
-                  <div class="item">
-                     <h2 id="two">Fechada</h2>
+                  <div class="itemWrapper">
+                    <div class='row toggle2 item filters' id="filter2">
+                       <input id='layer2On' type="radio" value="layer2On" name="toggle2" checked='checked'>
+                       <input id='layer2Off' type="radio" value="layer2Off" name="toggle2">
+                       <div class="toggle__pointer color2"></div>
+                    </div>
+                    <div class="item">
+                       <h2 id="two">Fechada</h2>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div id="capacity" class='row itemWrapper'>
-                 <h2 class="subtitle"> Capacidade </h2>
-              </div>
-              <div class="itemWrapper">
-                <svg id="reset3" class="item" version="1.1" x="0px" y="0px"
-                  viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
-                <g id="">
-                 <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
-                   c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
-                 <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
-                   c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
-                </g>
-                </svg>
-                <div class="item">
-                  <p> Limpar Capacidade</p>
+                <div id="capacityWrapper">
+                  <div id="capacity" class='row itemWrapper'>
+                     <h2 class="subtitle"> Capacidade </h2>
+                  </div>
+                  <div class="itemWrapper">
+                    <svg id="reset3" class="item" version="1.1" x="0px" y="0px"
+                      viewBox="0 0 48.9 42" style="enable-background:new 0 0 48.9 42;" xml:space="preserve">
+                    <g id="">
+                     <path id="XMLID_2_" class="st0" d="M13.2,32.2c-4.1-4.1-5.4-9.7-4.3-14.9l4.4,1.4L10.1,6L0.1,14.3l4.4,1.4
+                       c-1.7,6.8,0.1,14.3,5.4,19.7c6.2,6.2,15.5,7.7,23.1,4.2L31.8,35C25.8,38.2,18.2,37.2,13.2,32.2z"/>
+                     <path id="XMLID_1_" class="st0" d="M44.5,26c1.7-6.8-0.1-14.3-5.4-19.7c-6.2-6.2-15.4-7.6-23-4.3l1.1,4.6c6-3,13.6-2.1,18.5,2.9
+                       c4.1,4.1,5.4,9.7,4.3,14.9l-4.4-1.4l3.1,12.7l10.1-8.4L44.5,26z"/>
+                    </g>
+                    </svg>
+                    <div class="item">
+                      <p> Limpar Capacidade</p>
+                    </div>
+                  </div>
+                  <div class='row itemWrapper'>
+                     <div class="">
+                        <img id="minCircle" class='item2' src="./img/legend.svg" /img>
+                        <p id="minCircleVal" class='item2'></p>
+                        <img id="maxCircle" class='item2' src="./img/legend.svg" /img>
+                        <p id="maxCircleVal" class='item2'></p>
+                     </div>
+                  </div>
+                  <div class='session' id='sliderbar'>
+                     <input id='slider' class='row' type='range' min='0' max='' step='1' value='' />
+                     <div id="wrapper">
+                        <p id="start"></p>
+                        <p id="end"></p>
+                     </div>
+                     <p>Capacidade mínima: <span id="selectedCapacity">1</span> MW </p>
+                  </div>
                 </div>
-              </div>
-              <div class='row itemWrapper'>
-                 <div class="">
-                    <img id="minCircle" class='item2' src="./img/legend.svg" /img>
-                    <p id="minCircleVal" class='item2'></p>
-                    <img id="maxCircle" class='item2' src="./img/legend.svg" /img>
-                    <p id="maxCircleVal" class='item2'></p>
-                 </div>
-              </div>
-              <div class='session' id='sliderbar'>
-                 <input id='slider' class='row' type='range' min='0' max='' step='1' value='' />
-                 <div id="wrapper">
-                    <p id="start"></p>
-                    <p id="end"></p>
-                 </div>
-                 <p>Capacidade mínima: <span id="selectedCapacity">1</span> MW </p>
-              </div>
             </div>
 
             <div class="instruction itemWrapper" id="instruction">
